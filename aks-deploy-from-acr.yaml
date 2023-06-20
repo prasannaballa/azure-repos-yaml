@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: azururepo123.azurecr.io
+        image: azururepo123.azurecr.io/classic:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
@@ -33,6 +33,6 @@ spec:
     port: 80
     protocol: TCP
     targetPort: 8085
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: springboot-app
