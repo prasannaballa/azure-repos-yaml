@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: prasannaspringbootapp
-          image: saipracticeacr.azurecr.io/prasannaspringbootapp
+          image: azururepo123.azurecr.io/prasannaspringbootapp
           ports:
           - containerPort: 80
